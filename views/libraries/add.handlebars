@@ -1,0 +1,22 @@
+<div class="card card-body col-md-6 col-offset-3">
+  <h3 class="nn">Books</h3>
+  <form action="/libraries" method="post">
+    <div class="form-group">
+      <label for="book_title" class="nn">Book Title</label>
+      <input type="text" class="form-control" name="book_title" required>
+    </div>
+    <div class="form-group">
+      <label for="publication_year" class="nn">Publication Year</label>
+      <textarea class="form-control" name="publication_year" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="language" class="nn">Language</label>
+      <textarea class="form-control" name="language" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="no_of_copies" class="nn">No of Copies</label>
+      <textarea class="form-control" name="no_of_copies" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Book</button>
+  </form>
+</div>

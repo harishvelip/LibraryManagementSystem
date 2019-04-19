@@ -1,0 +1,71 @@
+.logo{
+  width:130px;
+  margin:auto;
+  border-radius: 5px 50px 5px 50px;
+}
+.nn{
+  color:white;
+}
+.nnq{
+  color : chartreuse;
+}
+
+.hhh{
+  color : white;
+}
+.bb1{
+  color : red;
+}
+.fas{
+  background-color: rgba(11, 0, 12, 0.63);
+}
+
+/* navbars */
+.navbar{
+  background-color : azure;
+  
+
+}
+
+.n1{
+  color : black !important;
+}
+.nn12{
+  color : greenyellow;
+}
+
+/* main Body Background */
+.maini{
+  background-image : url('https://cdn.pixabay.com/photo/2014/11/07/14/37/book-520626_960_720.jpg');
+  background-repeat : no-repeat;
+  background-attachment : fixed;
+  background-size : cover;
+  background-position : center;
+}
+.edf{
+  display: inline-block;
+}
+
+.mr-5{
+  margin-right: 8% !important;
+}
+
+/* index.handlebars */
+.c1{
+  color : aliceblue;
+}
+
+hr{
+  background-color: blue;
+}
+
+.t1 , .card-body{
+  background-color: rgba(75, 82, 83, 0.63);
+  margin-top : 10%;
+}
+.in1{
+  display: inline-block;
+}
+.cl1{
+  background : rgba(13, 116, 116, 0.63);
+}

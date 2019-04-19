@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top mb-3">
+  <div class="container">
+    <a class="navbar-brand" style="color:black;" href="/"><b>Library Management System</b> </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" style="color:black;" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:black;" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:black;" href="/contactUs">Contact Us</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        {{#if user}}
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" style="color:black;" data-toggle="dropdown" id="navbarDropdownMenuLink">Books</a>
+            <div class="dropdown-menu">
+              <a href="/libraries" class="dropdown-item">Show Books</a>
+              <a href="/libraries/add" class="dropdown-item">Add Books</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="/users/logout" class="nav-link" style="color:red;">Logout</a>
+          </li>
+        {{else}}
+          <li class="nav-item">
+            <a href="/users/login" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="/users/register" class="nav-link">Register</a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

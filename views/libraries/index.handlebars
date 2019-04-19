@@ -1,0 +1,22 @@
+{{#each libraries}}
+  <div class="card card-body mb-2 col-md-3 mr-5 edf">
+    
+          <p><h4 class="nn text-center">Book Name : {{book_title}}</h4></p>
+          <hr>
+          <p class="nn">Publication Year : {{publication_year}}</p>
+          <p class="nn">Languages : {{language}}</p>
+          <p class="nn">Number of Copies : {{no_of_copies}}</p>
+    
+      <div class="col-md-6 in1 ">
+            <a class="btn btn-dark mb-2" href="/libraries/edit/{{id}}"><span><i class="fas fa-edit nnq"></i></a>
+      </div>
+      <div class="col-md-6 in1 float-right">
+            <form method="post" action="/libraries/{{id}}?_method=DELETE">
+              <input type="hidden" name="_method" value="DELETE">
+              <button class="btn btn-danger ">Remove</button>
+            </form>
+      </div>
+  </div>
+{{else}}
+  <p>No Books to Display</p>
+{{/each}}
